@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fluid Web</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contextBox originalBox" id="contextBox_0">
+        <input type="text" class="inputTitle" value="Context Name" /> <input type="button" value="x" class="buttonDelete" id="buttonDelete_0" />
+        <div class="boxControls">
+        Context type: 
+        <select id="contextType_0" class="contextType">
+            <option value="layer">Layer</option>
+            <option value="type">Type</option>
+        </select>
+        <br /><br />
+        Context size: <input type="text" class="inputSize" id="inputSize_0" value="0" /> px
+        <br /><br />
+        Target size: <input type="text" class="inputTarget" id="inputTarget_0" value="0" /> px
+        <br /><br />
+        Result size: <input type="text" class="outputTarget" id="outputTarget_0" value="0" /> <span id="targetFormat_0" class="targetFormat">%</span>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+
+    <br />
+
+    <input id="addBox" value="+" type="button" />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        if (typeof jQuery === 'undefined') {
+            document.write("<script src='js/jquery-3.1.1.min.js'>\x3C/script>");
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
