@@ -51,7 +51,7 @@ $(document).ready(function(){
         $('.targetFormat', newBox).html('%');
         $('.targetFormat', newBox).attr('id', 'targetFormat_' + indexCounter);
 
-        newBox.prependTo(document.body);
+        newBox.appendTo(document.body);
 
         indexCounter++;
     }
