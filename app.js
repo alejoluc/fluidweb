@@ -68,16 +68,18 @@ $(document).ready(function(){
             result = (targetSize / contextSize) * 100;
             $('#targetFormat_' + id).html('%');
             $('#inputSize_' + id).attr('disabled', false);
-        } else if (contextType == 'type') {
+        } else if (contextType == 'text') {
             result = targetSize / baseFontSize;
             $('#targetFormat_' + id).html('em');
             $('#inputSize_' + id).attr('disabled', true);
         }
 
-        if (!isNaN(result)) {
+        if (!isNaN(result) && isFinite(result)) {
             $('#outputTarget_' + id).val(result);
+            $('#outputTarget_' + id).attr('disabled', false);
         } else {
             $('#outputTarget_' + id).val(0);
+            $('#outputTarget_' + id).attr('disabled', true);
         }
     }
 });
