@@ -45,6 +45,7 @@ $(document).ready(function(){
         $('.inputTarget', newBox).val('0');
 
         $('.outputTarget', newBox).attr('id', 'outputTarget_' + indexCounter);
+        $('.outputTarget', newBox).attr('disabled', true);
         $('.outputTarget', newBox).val('0');
 
         $('.targetFormat', newBox).html('%');
