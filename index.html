@@ -12,20 +12,35 @@
 <body>
     <input id="addBox" value="+" type="button" />
     <br />
-    <div class="contextBox originalBox" id="contextBox_0">
-        <input type="text" class="inputTitle" value="Context Name" /> <input type="button" value="x" class="buttonDelete" id="buttonDelete_0" />
-        <div class="boxControls">
-        Context type: 
-        <select id="contextType_0" class="contextType">
-            <option value="layer">Layer</option>
-            <option value="text">Text</option>
-        </select>
-        <br /><br />
-        Context size: <input type="text" class="inputSize" id="inputSize_0" value="0" /> px
-        <br /><br />
-        Target value: <input type="text" class="inputTarget" id="inputTarget_0" value="0" /> px
-        <br /><br />
-        Result value: <input type="text" class="outputTarget" id="outputTarget_0" value="0" disabled="true" /> <span id="targetFormat_0" class="targetFormat">%</span>
+    <div id="boxesContainer">
+        <div class="contextBox originalBox" id="contextBox_0">
+            <input type="text" class="inputTitle" value="Context Name" /> <input type="button" value="x" class="buttonDelete" id="buttonDelete_0" />
+
+            <div class="boxControls">
+                <div class="leftColumn">
+                    Context type
+                    <br /><br/>
+                    Context size
+                    <br /><br/>
+                    Target size
+                    <br /><br/>
+                    Result value
+                </div>
+
+                <div class="rightColumn">
+                    <select id="contextType_0" class="contextType">
+                        <option value="layer">Layer</option>
+                        <option value="text">Text</option>
+                    </select>
+                    <br /><br />
+                    <input type="text" class="inputSize" id="inputSize_0" value="0" /> px
+                    <br /><br />
+                    <input type="text" class="inputTarget" id="inputTarget_0" value="0" /> px
+                    <br /><br />
+                    <input type="text" class="outputTarget" id="outputTarget_0" value="0" disabled="true" /> <span id="targetFormat_0" class="targetFormat">%</span>
+                </div>
+                <div style="clear:both"></div>
+            </div>
         </div>
     </div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
