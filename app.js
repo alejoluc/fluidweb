@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.inputSize').focus(function(){ $(this).select(); });
     $('.inputTarget').focus(function(){ $(this).select(); });
 
-    $('.inputTarget, .inputSize, .contextType').change(function(){
+    $('.inputTarget, .inputSize, .contextType').on('keyup change', function(){
         var $this = $(this);
         var id = $this.attr('id').split('_')[1];
 
